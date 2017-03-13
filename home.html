@@ -5,18 +5,25 @@
 <title>梦蝶</title>
 <EMBED src="游戏原声 - 蝶恋 复刻LIVE版.mp3" width=0 height=0 type=audio/mpeg loop="-1" autostart="false" volume="0"></EMBED>
 </head>
+<script type="text/javascript"> 
+function changeInputlength(cursor) 
+{ 
+var getText=document.getElementById("text"); 
+cursor.size=getText.value.length+2; 
+} 
+</script> 
 <div id="Layer1" style="position:absolute; left:0px; top:0px; width:100%; height:100%">  
 <img src="1.jpg" width="100%" height="100%"/> 
 </div>
 <!--<img align="center" src="123.jpg" alt="凌音" style="position:absolute; left:650px; top:0px; ">
  -->
  <div id="container"> 
-<form action="http://www.baidu.com/baidu" target="_blank" style="position:absolute; left:500px; top:350px;" > 
+<form action="http://www.baidu.com/baidu" target="_blank" style="position:absolute; left:38%; top:55%;" > 
 <div align="center"> 
 <input name=tn type=hidden value=baidu> 
 <a href="http://www.baidu.com/"> 
-<img src="http://img.baidu.com/search/img/baidulogo_clarity_80_29.gif" alt="Baidu" style=" "position:absolute; left:300px; top:350px;" width="80"></a> 
-<input type=text name=word size=30> 
+<img src="http://img.baidu.com/search/img/baidulogo_clarity_80_29.gif" alt="Baidu" style=" "position:absolute; left:30%; top:30%;" width="80"></a> 
+<input type="text" size="30" id="text" onkeydown="changeInputlength(this);"/>
 <input type="submit" value="人常离丶情未央"></div> 
 </form> 
 </div> 
